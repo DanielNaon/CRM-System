@@ -1,0 +1,186 @@
+body{
+  background-color: #D7D1C9;
+}
+
+.App {
+  text-align: center;
+}
+
+.navbar{
+  display: grid;
+  background-color:	#672F2F;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(3, 100px);
+  /* padding-right: 15px;
+  padding-left: 15px; */
+  
+}
+
+.navbarChild{
+  /* display: inline-block; */
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: royalblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  text-align:justify;
+  text-justify:inter-word;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+.navbarChild:hover{
+  background-color: hsla(0, 100%, 70%, 0.3);
+  /* opacity: 0.1; */
+}
+
+.tabContainer:hover{
+  background-color:#99b19c;
+}
+
+.T{
+  text-align: center;
+  width: 100vw; 
+  /* border-style: outset;  */
+  border-bottom: 1px solid black; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  padding: 3px;
+}
+
+.popUP{
+  position: absolute;
+  background-color: #99b19c;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  justify-content: center;
+  margin-left: 40%;
+  margin-top: 12%;
+  border: 2px solid #6d806f;
+}
+.updateClientContainer{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+.popButton{
+  background:white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  justify-content: center;
+}
+.category{
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-top: 5px;
+  border-style: outset;
+  /* border: 2px solid green; */
+  justify-content: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+.in{
+  float:right;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 1px solid rgb(90, 90, 90);
+}
+
+.in:focus{
+  outline: none;
+}
+
+.ccontainer{
+  float: right;
+}
+
+.cin{
+  float: left;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 1px solid rgb(90, 90, 90);
+}
+
+.cin:focus{
+  outline: none;
+}
+
+.cbutton{
+  float: left;
+}
+
+
+.pos{
+  width: 270px;
+}
+.Badges{
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.ipos{
+  margin-left: 0;
+  font-size: 70px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  padding: 15px;
+  color: white;
+  border-radius: 30px;
+}
+.badgeInfo{
+  display: inline-block;
+  /* margin-left: 4px; */
+
+}
+.b1{
+  background-color: #f0f69f;
+
+}
+.b2{
+  background-color: blue;
+}
+.b3{
+  background-color: red;
+}
+.b4{
+  background-color: #49beb7;
+}
+.numberBadge{
+  font-size: 30px;
+}
+.graphsContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.actionsContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.action{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 50px 15%;
+}
+
+.iact{
+  font-size: 150px;
+  text-align: center;
+  width: 100%;
+  padding: 15px 0;
+  opacity: 0.75;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
