@@ -5,6 +5,7 @@ const path = require('path')
 const mongoose = require('mongoose')
 mongoose.connect('mongodb://localhost/CRM', { useNewUrlParser: true })
 const Client = require('./clientsSchema')
+app.use(express.static(path.join(__dirname, 'build')));
 
 // const data = require('./data.json')
 // for(let d of data){
@@ -59,6 +60,11 @@ app.put('/updateClient', function (req, res) {
     })
     res.end()
 })
+
+app.get('*', function (req, res) {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
 
 app.listen(port, function () {
     console.log("server is running on port " + port)

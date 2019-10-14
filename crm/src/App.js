@@ -5,7 +5,7 @@ import Actions from './components/Actions'
 import Anayltics from './components/Analytics'
 import Clients from './components/Clients'
 import './App.css'
-
+// let localhost = http://localhost:8080
 class App extends Component {
   constructor() {
     super()
@@ -17,7 +17,7 @@ class App extends Component {
 
   // requsting the data from the MongoDB and pushing to to my state
   dataInTheState = async () => {
-    const data = await axios.get('http://localhost:8080/clients')
+    const data = await axios.get('/clients')
     this.setState({ data: data.data }, function () {
       // console.log(this.state.data)
     })
@@ -31,17 +31,17 @@ class App extends Component {
       name: `${firstName} ${lastName}`,
       country: country
     }
-    await axios.put(`http://localhost:8080/update/${email}`, newDetails)
+    await axios.put(`/update/${email}`, newDetails)
     this.dataInTheState()
   }
   //addClient//
   addClient = async (newClient) => {
-    await axios.post(`http://localhost:8080/addClient`, newClient)
+    await axios.post(`/addClient`, newClient)
     this.dataInTheState()
   }
 //updateClient//
   updateClient = async (client) => {
-    await axios.put(`http://localhost:8080/updateClient`, client)
+    await axios.put(`/updateClient`, client)
     this.dataInTheState()
   }
 
